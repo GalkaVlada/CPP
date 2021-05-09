@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+        int arr;        
+        double *cnt;
+        int h;   
+}
+
+void constract( int arr ,double *cnt){
+ scanf("%d", &arr);
+
+        cnt = (double *)malloc(arr*sizeof(double));
+       
+        if(cnt == NULL) {
+           printf("Ошибка\n");
+           return -1;
+        }
+       
+        free(cnt); 
+}
+void distract( int arr ,double *cnt){
+
+ scanf("%d", &arr);
+
+
+        cnt = (double *)malloc(arr*sizeof(double));
+       
+        if(cnt == NULL) {
+           printf("Ошибка\n");
+        }
+       
+        delete(cnt);  
+}
+
